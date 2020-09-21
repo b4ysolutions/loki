@@ -26,7 +26,7 @@
       <h3 id="repository">Repository</h3>
       <p>
         The current version of the Loki API lives at
-        <a href="https://github.com/b4ysolutions/loki-api">github.com/b4ysolutions/loki-api</a>.
+        <a href="https://github.com/b4ysolutions/loki">github.com/b4ysolutions/loki</a>.
       </p>
 
       <h3 id="versions">Versions</h3>
@@ -424,14 +424,14 @@ export default {
     return {
       items: [
         {
-          version: "1.0.0",
-          date: "01/09/2020",
+          version: "v2020.09.21",
+          date: "21/09/2020",
           main_changes: "Initial deployment",
         },
       ],
       usage_steps: [
-        "tar -xvf loki-api-1.0.0.tar.gz",
-        "cd loki-api-1.0.0",
+        "tar -xvf loki-2020.09.21.tar.gz",
+        "cd loki-2020.09.21",
         "go run main.go",
       ],
     };
