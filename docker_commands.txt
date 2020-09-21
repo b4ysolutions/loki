@@ -1,0 +1,9 @@
+  cd $GOPATH/src/github.com/b4ysolutions
+
+  sudo rm -rf $GOPATH/src/github.com/b4ysolutions/loki-api/mysql_data/
+    
+  docker container stop $(docker container ls -aq --filter "name=loki" |  awk '{print $1;}')
+
+  docker container rm $(docker container ls -aq --filter "name=loki" |  awk '{print $1;}')
+
+  docker image rm $(docker images -aq --filter "reference=loki*" --filter "reference=mysql*" --filter "reference=golang*" --filter "dangling=true")
